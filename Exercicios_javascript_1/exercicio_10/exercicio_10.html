@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercicio 10</title>
+    <script>
+
+        let valor = parseFloat(prompt("Digite o valor da prestação: "));
+        let taxa = prompt("Digite a taxa de juros imposta pelo banco (em porcentagem): ");
+        let tempo = prompt("Digite o número de dias em atraso: ");
+
+        let prestacao = valor + (valor * (taxa/100) * tempo);
+
+        alert("O valor da prestação em atraso é: R$ " + prestacao);
+
+    </script>
+</head>
+<body>
+</body>
+</html>

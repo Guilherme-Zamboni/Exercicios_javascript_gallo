@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercicio 15</title>
+    <script>
+
+        let raio = parseFloat(prompt("Digite o raio do cilíndro: "));
+        let altura = parseFloat(prompt("Digite a altura do cilíndro: "));
+        const pi = 3.14;
+
+        //alert("Raio: " + raio);
+        //alert("altura: " + altura);
+
+        let area_b = pi * (raio * raio);
+        //alert("Área base: " + area_b);
+
+        let area_l = 2 * pi * raio * altura;
+        //alert("Área lateral: " + area_l);
+
+        let area = area_b + area_l;
+        //alert("Área total: " + area);
+
+        let litros = (area / 3) * 2;
+        //alert("Litros: " + litros);
+
+        let latas = litros / 5;
+        //alert("Latas: " + latas);
+
+        let custo = Math.ceil(latas) * 40.00;
+        //alert("custo: " + parseInt(custo));
+
+        alert("Quantidade: " + Math.ceil(latas) + " latas");
+        alert("Custo : R$" +  parseInt(custo)); 
+
+    </script>
+</head>
+<body>
+</body>
+</html>

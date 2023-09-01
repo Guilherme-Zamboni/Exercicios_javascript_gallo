@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercicio 5</title>
+    <script>
+
+        let prestacoes = parseInt(prompt("Digite o número total de prestações: "));
+        let pagas = parseInt(prompt("Digite o número de prestações pagas: "));
+        let valor = parseFloat(prompt("Digite o valor de cada prestação: "));
+
+        let pago = pagas * valor;
+        let deve = (prestacoes - pagas) * valor;
+
+        alert("O cliente pagou " + pagas + " prestações no valor total de " + pago + " reais." );
+        alert("Estão faltando " + (prestacoes - pagas) + " prestações para serem pagas no valor de " + deve + " reais." );
+
+
+    </script>
+</head>
+<body>
+</body>
+</html>
